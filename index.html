@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Mastery Learning Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Tech Mastery Learning Dashboard</h1>
+            <p>Track your journey from foundations to AI mastery!</p>
+        </div>
+
+        <div class="dashboard">
+            <!-- Felicita's Section -->
+            <div class="user-section">
+                <div class="user-header">
+                    <div class="user-name">👩‍💻 Felicita</div>
+                    <div class="progress-summary">
+                        <div class="stat">
+                            <div class="stat-number" id="felicita-completed">0</div>
+                            <div class="stat-label">Completed</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" id="felicita-total">0</div>
+                            <div class="stat-label">Total</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" id="felicita-percentage">0%</div>
+                            <div class="stat-label">Progress</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chart-container">
+                    <canvas id="felicitaChart"></canvas>
+                </div>
+
+                <div class="task-list" id="felicita-tasks">
+                    <!-- Tasks will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Anbarasan's Section -->
+            <div class="user-section">
+                <div class="user-header">
+                    <div class="user-name">👨‍💻 Anbarasan</div>
+                    <div class="progress-summary">
+                        <div class="stat">
+                            <div class="stat-number" id="anbarasan-completed">0</div>
+                            <div class="stat-label">Completed</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" id="anbarasan-total">0</div>
+                            <div class="stat-label">Total</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" id="anbarasan-percentage">0%</div>
+                            <div class="stat-label">Progress</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chart-container">
+                    <canvas id="anbarasanChart"></canvas>
+                </div>
+
+                <div class="task-list" id="anbarasan-tasks">
+                    <!-- Tasks will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Overall Statistics -->
+        <div class="overall-stats">
+            <div class="overall-header">
+                <h2>📊 Overall Progress & Category Breakdown</h2>
+            </div>
+            <div class="overall-charts">
+                <div class="chart-wrapper">
+                    <canvas id="comparisonChart"></canvas>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="categoryChart"></canvas>
+                </div>
+                <div class="chart-wrapper">
+                    <canvas id="overallChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="category-progress" id="categoryProgress">
+                <!-- Category progress cards will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
